@@ -1,7 +1,7 @@
 export default createSchema({
   name: 'default',
   types: schemaTypes.concat([
-    // Product Schema
+    // Furniture Product Schema
     {
       name: 'product',
       title: 'Product',
@@ -12,6 +12,8 @@ export default createSchema({
         { name: 'price', title: 'Price', type: 'number' },
         { name: 'description', title: 'Description', type: 'text' },
         { name: 'category', title: 'Category', type: 'string' },
+        { name: 'dimensions', title: 'Dimensions', type: 'string' },
+        { name: 'material', title: 'Material', type: 'string' },
         { name: 'image', title: 'Image', type: 'image', options: { hotspot: true } },
         { name: 'stock', title: 'Stock', type: 'number' },
         { name: 'tags', title: 'Tags', type: 'array', of: [{ type: 'string' }] },
